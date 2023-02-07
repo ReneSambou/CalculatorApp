@@ -52,19 +52,24 @@ public class Main {
 
             }
             else if(action_today == 4) {// general Arithmetic
+                boolean arithmetric = true;
+                while(arithmetric){
                  {
                     System.out.println("What type of operation ");
                     System.out.println("Enter 1- for addition ");
                     System.out.println("Enter 2- for subtraction ");
                     System.out.println("Enter 3- for multiplication ");
                     System.out.println("Enter 4- for division ");
-                    System.out.println("Enter 0 - to end program");
+                    System.out.println("Enter 0 - to go back");
                     System.out.print("Your Choice: ");
                     action_today = scan.nextInt();
 
 
 
                     switch (action_today) {
+                        case 0:
+                            arithmetric = false;
+                            break;
                         case 1:
                             System.out.print("Enter 1st Number: ");
                             maths.a = scan.nextDouble();
@@ -110,4 +115,4 @@ public class Main {
         }
 
     }
-}
+}}
