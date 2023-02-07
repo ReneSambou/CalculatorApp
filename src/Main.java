@@ -11,8 +11,9 @@ public class Main {
 
         boolean calculate = true;
         Scanner scan = new Scanner(System.in);
-        while (calculate){
+
             System.out.println("What do you want to do today:");
+        while (calculate){
             System.out.println("Enter 1 - Areas of Triangles");
             System.out.println("Enter 2 - Areas of Rectangle");
             System.out.println("Enter 3 - Areas of Circles");
@@ -53,9 +54,10 @@ public class Main {
             }
             else if(action_today == 4) {// general Arithmetic
                 boolean arithmetric = true;
-                while(arithmetric){
+
                  {
                     System.out.println("What type of operation ");
+                     while(arithmetric){
                     System.out.println("Enter 1- for addition ");
                     System.out.println("Enter 2- for subtraction ");
                     System.out.println("Enter 3- for multiplication ");
