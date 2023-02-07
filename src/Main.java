@@ -8,16 +8,21 @@ public class Main {
 
         Area area = new Area();
         Maths maths = new Maths();
+        Perimeter perimeter = new Perimeter();
 
         boolean calculate = true;
         Scanner scan = new Scanner(System.in);
 
             System.out.println("What do you want to do today:");
         while (calculate){
+            System.out.println("What else do you want to do");
             System.out.println("Enter 1 - Areas of Triangles");
             System.out.println("Enter 2 - Areas of Rectangle");
             System.out.println("Enter 3 - Areas of Circles");
             System.out.println("Enter 4 - For General Arithmetic");
+            System.out.println("Enter 5 - Perimeter of Triangles");
+            System.out.println("Enter 6 - Perimeter of Rectangle");
+            System.out.println("Enter 7 - Perimeter of Circle");
             System.out.println("Enter 0 - to end program");
             System.out.print("Your Choice: ");
             action_today = scan.nextInt();
@@ -29,6 +34,30 @@ public class Main {
                 area.height = scan.nextDouble();
                 System.out.println("The Area of your rectangle is: " + area.Triangle());
 
+            }
+            // Perimeter
+            else if (action_today == 5){// Triangle
+                System.out.print("Enter 1st side");
+                perimeter.a = scan.nextDouble();
+                System.out.print("Enter 2nd side");
+                perimeter.b = scan.nextDouble();
+                System.out.print("Enter 3rd side");
+                perimeter.c = scan.nextDouble();
+                System.out.println("The perimeter of your triangle is " + perimeter.Triangle());
+
+            }
+            else if (action_today == 6){// Rectangle
+                System.out.print("Enter length: ");
+                perimeter.length = scan.nextDouble();
+                System.out.print("Enter width: ");
+                perimeter.width = scan.nextDouble();
+                System.out.println("The perimeter of your triangle is " + perimeter.Rectangle());
+            }
+
+            else if (action_today == 7){// Circle
+                System.out.print("Enter radius: ");
+                perimeter.radius = scan.nextDouble();
+                System.out.println("The perimeter of your triangle is " + perimeter.Circle());
             }
             else if(action_today == 0) {
                 calculate = false;
@@ -109,6 +138,7 @@ public class Main {
 
 
                 }
+
 
 
             }
