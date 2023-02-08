@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -15,16 +17,23 @@ public class Main {
 
             System.out.println("What do you want to do today:");
         while (calculate){
-            System.out.println("What else do you want to do");
-            System.out.println("Enter 1 - Areas of Triangles");
-            System.out.println("Enter 2 - Areas of Rectangle");
-            System.out.println("Enter 3 - Areas of Circles");
-            System.out.println("Enter 4 - For General Arithmetic");
-            System.out.println("Enter 5 - Perimeter of Triangles");
-            System.out.println("Enter 6 - Perimeter of Rectangle");
-            System.out.println("Enter 7 - Perimeter of Circle");
-            System.out.println("Enter 0 - to end program");
-            System.out.print("Your Choice: ");
+
+            ArrayList<String> option = new ArrayList<>(8);
+
+            option.add("What else do you want to do");
+            option.add("Enter 1 - Areas of Triangles");
+            option.add("Enter 2 - Areas of Rectangle");
+            option.add("Enter 3 - Areas of Circles");
+            option.add("Enter 4 - For General Arithmetic");
+            option.add("Enter 5 - Perimeter of Triangles");
+            option.add("Enter 6 - Perimeter of Rectangle");
+            option.add("Enter 7 - Perimeter of Circle");
+            option.add("Enter 0 - to end program");
+            option.add("Your Choice: ");
+
+             System.out.println(option.get(2));
+
+             
             action_today = scan.nextInt();
 
             if (action_today == 1) { // Triangles
