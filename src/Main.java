@@ -1,8 +1,4 @@
 import java.util.ArrayList;
-<<<<<<< HEAD
-import java.util.List;
-=======
->>>>>>> 4d8374f77786c76d217b2b9d933725eeac595184
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +16,6 @@ public class Main {
 
 
         while (calculate){
-<<<<<<< HEAD
 
             ArrayList<String> option = new ArrayList<>(8);
 
@@ -37,8 +32,7 @@ public class Main {
 
              System.out.println(option.get(2));
 
-             
-=======
+
             ArrayList<String> option = new ArrayList<String>();
             option.add("What  do you want to do");
             option.add("Enter 1 - Areas of Triangles");
@@ -55,7 +49,7 @@ public class Main {
             for(int i =0; i < option.size(); i++){
                 System.out.println(option.get(i));
             }
->>>>>>> 4d8374f77786c76d217b2b9d933725eeac595184
+
             action_today = scan.nextInt();
 
 
